@@ -1,3 +1,3 @@
 export const KanbanBoard = () => {
-  return <div></div>;
+  return <div>KanbanBoard</div>;
 };
