@@ -1,14 +1,14 @@
 import { Route, Routes } from "react-router-dom";
-import { KanbanBoard } from "../pages/KanbanBoard/KanbanBoard";
-import { PhoneBook } from "../pages/PhoneBook/PhoneBook";
-import { SharedLoyout } from "./SharedLoyout/SharedLoyout";
+import PhoneBook from "../pages/PhoneBook/PhoneBook";
+import TodoList from "../pages/TodoList/TodoList";
+import SharedLoyout from "./SharedLoyout";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<SharedLoyout />}>
         <Route index element={<PhoneBook />} />
-        <Route path="kanban" element={<KanbanBoard />} />
+        <Route path="todo-list" element={<TodoList />} />
       </Route>
     </Routes>
   );

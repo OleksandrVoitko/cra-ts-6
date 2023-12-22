@@ -1,22 +1,34 @@
 import { Button, Forma, Input, Label } from "./ContactForm.styled";
 
-export const ContactForm = () => {
+const ContactForm = () => {
   return (
     <Forma action="">
-      <Label for="firstName"> First name</Label>
-      <Input
-        type="text"
-        id="firstName"
-        minlength="2"
-        placeholder=" "
-        required
-      />
+      <Label htmlFor="firstName">
+        Name
+        <Input
+          type="text"
+          id="firstName"
+          minLength="2"
+          placeholder="Enter name..."
+          required
+        />
+      </Label>
 
-      <Label for="phone">Phone </Label>
-      <Input type="tel" id="phone" minlength="2" placeholder=" " required />
+      <Label htmlFor="phone">
+        Phone
+        <Input
+          type="tel"
+          id="phone"
+          minLength="2"
+          placeholder="Enter phone..."
+          required
+        />
+      </Label>
       <div>
         <Button type="submit">Add</Button>
       </div>
     </Forma>
   );
 };
+
+export default ContactForm;

@@ -1,9 +1,18 @@
-import { ContactForm } from "../../components/PhoneBook/ContactForm/ContactForm";
+import Bar from "../../components/Bar";
+import Loyout from "../../components/Loyout/Loyout";
+import ContactForm from "../../components/PhoneBook/ContactForm";
+import ContactCounter from "../../components/PhoneBook/ContactCounter/ContactCounter";
+import Filter from "../../components/PhoneBook/Filter/Filter";
 
-export const PhoneBook = () => {
+const PhoneBook = () => {
   return (
-    <div>
+    <Loyout>
+      <Bar barName={"Contacts"} filterName={"Filter by name"}>
+        <ContactCounter></ContactCounter>
+        <Filter></Filter>
+      </Bar>
       <ContactForm />
-    </div>
+    </Loyout>
   );
 };
+export default PhoneBook;
