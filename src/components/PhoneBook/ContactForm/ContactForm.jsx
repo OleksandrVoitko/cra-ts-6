@@ -3,11 +3,11 @@ import { Button, Forma, Input, Label } from "./ContactForm.styled";
 const ContactForm = () => {
   return (
     <Forma action="">
-      <Label htmlFor="firstName">
+      <Label htmlFor="name">
         Name
         <Input
-          type="text"
-          id="firstName"
+          type="text" 
+          id="name"
           minLength="2"
           placeholder="Enter name..."
           required

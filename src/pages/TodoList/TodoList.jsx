@@ -1,6 +1,7 @@
 import Bar from "../../components/Bar";
 import Loyout from "../../components/Loyout/Loyout";
 import StatusFilter from "../../components/TodoList/StatusFilter";
+import TaskList from "../../components/TodoList/TaskList";
 
 import TodoCounter from "../../components/TodoList/TodoCounter";
 import TodoForm from "../../components/TodoList/TodoForm";
@@ -13,6 +14,7 @@ const TodoList = () => {
         <StatusFilter />
       </Bar>
       <TodoForm />
+      <TaskList />
     </Loyout>
   );
 };

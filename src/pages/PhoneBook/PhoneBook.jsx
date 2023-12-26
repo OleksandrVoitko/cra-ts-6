@@ -7,7 +7,7 @@ import Filter from "../../components/PhoneBook/Filter/Filter";
 const PhoneBook = () => {
   return (
     <Loyout>
-      <Bar barName={"Contacts"} filterName={"Filter by name"}>
+      <Bar barName={"Contacts"} filterName={"Find contact by name"}>
         <ContactCounter></ContactCounter>
         <Filter></Filter>
       </Bar>
