@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
-// import { store } from "../../../redux/store";
+
 const TaskList = () => {
-  const list = useSelector((store) => store.todoList.tasks);
+  const list = useSelector((store) => store.tasks);
   console.log(list);
   return <div></div>;
 };
