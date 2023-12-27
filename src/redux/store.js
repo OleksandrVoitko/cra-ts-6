@@ -1,4 +1,7 @@
-import { createStore } from "redux";
-import { rootReducer } from "./todoList/reducer";
+import { configureStore } from "@reduxjs/toolkit";
+import { filterReducer } from "./todoList/reducerFilter";
+import { tasksReducer } from "./todoList/reducerTasks";
 
-export const store = createStore(rootReducer);
+export const store = configureStore({
+  reducer: { tasks: tasksReducer, filters: filterReducer },
+});

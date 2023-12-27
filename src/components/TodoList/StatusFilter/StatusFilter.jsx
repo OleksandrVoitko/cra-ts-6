@@ -9,25 +9,24 @@ const StatusFilter = () => {
   const dispatch = useDispatch();
   const handleFilterChange = (filter) => {
     dispatch(setStatusFilter(filter));
-    console.log("cl");
   };
   return (
     <WrapperDiv>
       <Button
         selected={filter === statusFilters.all}
-        onClick={() => handleFilterChange(statusFilters.all)}
+        handleClick={() => handleFilterChange(statusFilters.all)}
       >
         All
       </Button>
       <Button
         selected={filter === statusFilters.active}
-        onClick={() => handleFilterChange(statusFilters.active)}
+        handleClick={() => handleFilterChange(statusFilters.active)}
       >
         Active
       </Button>
       <Button
         selected={filter === statusFilters.completed}
-        onClick={() => handleFilterChange(statusFilters.completed)}
+        handleClick={() => handleFilterChange(statusFilters.completed)}
       >
         Completed
       </Button>
