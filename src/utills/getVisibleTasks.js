@@ -1,4 +1,4 @@
-import { statusFilters } from "../todoList/constants";
+import { statusFilters } from "../redux/todoList/constants";
 
 export const getVisibleTasks = (tasks, statusFilter) => {
   switch (statusFilter) {

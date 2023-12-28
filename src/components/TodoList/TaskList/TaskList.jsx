@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { getVisibleTasks } from "../../../redux/utills/getVisibleTasks";
+import { getVisibleTasks } from "../../../utills/getVisibleTasks";
 import Task from "../Task/Task";
 import { Li, Ul } from "./TaskList.styled";
 
