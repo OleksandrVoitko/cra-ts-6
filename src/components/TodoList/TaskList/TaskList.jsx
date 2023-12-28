@@ -1,12 +1,17 @@
 import { useSelector } from "react-redux";
+import { getVisibleTasks } from "../../../redux/utills/getVisibleTasks";
 import Task from "../Task/Task";
 import { Li, Ul } from "./TaskList.styled";
 
 const TaskList = () => {
-  const taskList = useSelector((store) => store.tasks);
+  const tasks = useSelector((store) => store.tasks);
+  const statusFilter = useSelector((store) => store.filters.status);
+
+  const renderedTasks = getVisibleTasks(tasks, statusFilter);
+
   return (
     <Ul>
-      {taskList.map((task) => (
+      {renderedTasks.map((task) => (
         <Li key={task.id}>
           <Task task={task} />
         </Li>
