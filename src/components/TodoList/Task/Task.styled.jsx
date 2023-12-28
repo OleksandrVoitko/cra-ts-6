@@ -28,12 +28,14 @@ export const Button = styled.button`
   border: none;
   border-radius: 4px;
   background-color: transparent;
-  cursor: pointer;
-  color: #f44336;
+  cursor: ${(props) => (props.disabled ? "" : "pointer")};
+
+  color: ${(props) => (props.disabled ? "#bdbdbd" : "#f44336")};
+
   &:hover {
-    background-color: #e2e5e8;
+    background-color: ${(props) => (props.disabled ? "" : "#e2e5e8")};
   }
   &:active {
-    background-color: #bdbdbd;
+    background-color: ${(props) => (props.disabled ? "" : "#bdbdbd")};
   }
 `;
