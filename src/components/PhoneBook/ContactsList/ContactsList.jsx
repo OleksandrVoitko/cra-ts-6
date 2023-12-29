@@ -4,10 +4,15 @@ import { Li, Ul } from "./ContactsList.styled";
 
 const ContactsList = () => {
   const contacts = useSelector((store) => store.contacts);
+  const filter = useSelector((store) => store.filterContacts);
+
+  const renderedContscts = contacts.filter((contact) =>
+    contact.name.toLowerCase().includes(filter.toLowerCase())
+  );
 
   return (
     <Ul>
-      {contacts.map((contact) => (
+      {renderedContscts.map((contact) => (
         <Li key={contact.id}>
           <Contact contact={contact} />
         </Li>

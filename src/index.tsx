@@ -24,8 +24,8 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    {/* <BrowserRouter basename="/cra-ts-6/"> */}
-    <BrowserRouter>
+    <BrowserRouter basename="/cra-ts-6/">
+      {/* <BrowserRouter> */}
       <Provider store={store}>
         <App />
       </Provider>
