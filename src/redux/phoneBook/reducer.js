@@ -21,8 +21,6 @@ export const contactsReducer = createReducer(
 export const filterContactsReducer = createReducer(
   initialState.phoneBook.filter,
   (builder) => {
-    builder.addCase(setFilter, (state, action) => {
-      state = action.payload;
-    });
+    builder.addCase(setFilter, (state, action) => (state = action.payload));
   }
 );
