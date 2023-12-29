@@ -7,6 +7,8 @@ const TodoForm = () => {
   const [value, setValue] = useState("");
   const [visible, setVisible] = useState(false);
 
+  const dispatch = useDispatch();
+
   useEffect(() => {
     if (value) {
       setVisible(true);
@@ -14,8 +16,6 @@ const TodoForm = () => {
       setVisible(false);
     }
   }, [value]);
-
-  const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
     e.preventDefault();

@@ -30,13 +30,13 @@ export const Button = styled.button`
   border-radius: 4px;
   border: none;
   font: inherit;
-  cursor: pointer;
+  cursor: ${(props) => (props.disabled ? "" : "pointer")};
   background-color: #e2e5e8;
-  color: black;
+  color: ${(props) => (props.disabled ? "white" : "black")};
 
   &:hover,
   &:focus {
-    color: white;
-    background-color: orangered;
+    color: ${(props) => (props.disabled ? "" : "white")};
+    background-color: ${(props) => (props.disabled ? "" : "orangered")};
   }
 `;

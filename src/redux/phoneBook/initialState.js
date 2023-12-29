@@ -3,22 +3,22 @@ export const phoneBookInitialState = {
     {
       id: "1",
       name: "Rosie Simpson",
-      number: "459-12-56",
+      phone: "+575-459-156",
     },
     {
       id: "2",
       name: "Hermione Kline",
-      number: "443-89-12",
+      phone: "+575-443-812",
     },
     {
       id: "3",
       name: "Eden Clements",
-      number: "645-17-79",
+      phone: "+575-645-179",
     },
     {
       id: "4",
       name: "Annie Copeland",
-      number: "227-91-26",
+      phone: "+575-227-926",
     },
   ],
   filter: "",

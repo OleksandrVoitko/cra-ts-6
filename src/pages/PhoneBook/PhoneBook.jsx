@@ -3,6 +3,7 @@ import Loyout from "../../components/Loyout/Loyout";
 import ContactForm from "../../components/PhoneBook/ContactForm";
 import ContactCounter from "../../components/PhoneBook/ContactCounter/ContactCounter";
 import Filter from "../../components/PhoneBook/Filter/Filter";
+import ContactsList from "../../components/PhoneBook/ContactsList";
 
 const PhoneBook = () => {
   return (
@@ -12,6 +13,7 @@ const PhoneBook = () => {
         <Filter></Filter>
       </Bar>
       <ContactForm />
+      <ContactsList />
     </Loyout>
   );
 };
