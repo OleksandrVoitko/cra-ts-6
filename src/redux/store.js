@@ -1,7 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { contactsReducer, filterContactsReducer } from "./phoneBook/reducer";
-import { filterReducer } from "./todoList/reducerFilter";
-import { tasksReducer } from "./todoList/reducerTasks";
+import { contactsReducer } from "./phoneBook/contactsSlice";
+import { filterContactsReducer } from "./phoneBook/filterContactsSlice";
+import { filterReducer } from "./todoList/filterSlice";
+import { tasksReducer } from "./todoList/tasksSlice";
 
 export const store = configureStore({
   reducer: {

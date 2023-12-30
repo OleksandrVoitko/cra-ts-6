@@ -1,6 +1,7 @@
 import { MdClose } from "react-icons/md";
 import { useDispatch } from "react-redux";
-import { deleteContact } from "../../../redux/phoneBook/actions";
+import { deleteContact } from "../../../redux/phoneBook/contactsSlice";
+
 import { Button, DivWrapper, PText } from "./Contacts.styled";
 
 const Contact = ({ contact }) => {

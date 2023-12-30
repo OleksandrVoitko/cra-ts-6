@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
-import { addContact } from "../../../redux/phoneBook/actions";
+import { addContact } from "../../../redux/phoneBook/contactsSlice";
+
 import { Button, Forma, Input, Label } from "./ContactForm.styled";
 
 const ContactForm = () => {

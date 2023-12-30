@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
-import { addTask } from "../../../redux/todoList/actions";
+import { addTask } from "../../../redux/todoList/tasksSlice";
+
 import { Input, Forma, Button } from "./TodoForm.styled";
 
 const TodoForm = () => {
