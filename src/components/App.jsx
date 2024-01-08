@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import PhoneBook from "../pages/PhoneBook/PhoneBook";
 import TodoList from "../pages/TodoList/TodoList";
-import SharedLoyout from "./SharedLoyout";
+import SharedLoyout from "../pages/SharedLoyout";
 
 function App() {
   return (

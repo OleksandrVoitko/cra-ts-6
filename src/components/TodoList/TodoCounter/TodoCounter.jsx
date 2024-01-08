@@ -17,10 +17,10 @@ const TodoCounter = () => {
   return (
     <div>
       <TextP>
-        Active: <span>{count.active}</span>
+        Active - <span>{count.active}</span>
       </TextP>
       <TextP>
-        Completed: <span>{count.completed}</span>
+        Completed - <span>{count.completed}</span>
       </TextP>
     </div>
   );

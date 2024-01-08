@@ -1,14 +1,16 @@
-import { useDispatch, useSelector } from "react-redux";
-import { setFilter } from "../../../redux/phoneBook/filterContactsSlice";
+import { useSearchParams } from "react-router-dom";
 
 import { Input } from "./Filter.styled";
 
 const Filter = () => {
-  const dispatch = useDispatch();
-  const filter = useSelector((store) => store.filterContacts);
+  const [searchParams, setSearchParams] = useSearchParams();
+  let filter = "";
+  if (searchParams.get("filter")) {
+    filter = searchParams.get("filter");
+  }
 
   const handleChange = (e) => {
-    dispatch(setFilter(e.target.value));
+    setSearchParams({ filter: e.target.value });
   };
 
   return (
